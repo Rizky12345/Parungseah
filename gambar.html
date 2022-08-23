@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+	<div id="image" class="container columns-3 m-auto mt-5">
+		
+
+		<script>
+			let image = document.getElementById("image");
+
+			for(let i = 1; i<50;i++){
+				image.insertAdjacentHTML("afterbegin",`<img src="image/i (${i}).jpg" class="w-full mb-5 rounded" alt="">`);
+			}
+		</script>
+	</div>
+</body>
+</html>
